@@ -1,0 +1,783 @@
+body
+{
+ margin: 0;
+ padding: 0;
+ font-family: Arial;
+ font-size: 14px;
+}
+
+a
+{
+  padding: 0;
+  margin: 0;
+  color: #ea8e0b;
+  text-decoration: none;
+}
+
+a:hover
+{
+  color: #ea8e0b;
+}
+
+a img
+{
+    border: none; /* Убираем рамку */
+}
+
+a.underline
+{
+  text-decoration: underline;
+}
+
+/*==================Стиль для заголовков статей============*/
+h3#tit a
+{
+  font-size: 14px;
+  font-weight: normal;
+  color: #000;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+/*=============================*/
+
+
+/*=============================*/
+
+#top-bar
+{
+  background-color: rgba(255,255,255,0,4);
+  height: 100px;
+  background: url('../img/top-bar/top-bar-bg.png')no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.logo
+{
+  float: left;
+  border-right: 1px solid #fff;
+  padding-right: 12px
+}
+
+
+.link-socials ul
+{
+  float: left;
+  margin: 0 0 0 0;
+  line-height: 15px;
+  font-size: 12px;
+  width: 80px;
+}
+
+.link-socials li
+{
+  margin: 3px;
+
+}
+.link-socials a
+{
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.link-socials a:hover
+{
+  color: #ea8e0b;
+}
+
+ul#vk_mail
+{
+  margin-right: 0px;
+}
+
+ul#tw_fb
+{
+  margin-right: 0px;
+}
+
+ul#vk_mail li:first-child
+{
+  margin: 1;
+  list-style-image: url('../img/top-bar/vk.png'); /* Путь к изображению маркера */
+}
+ul#vk_mail li:last-child
+{
+  margin: 1;
+  list-style-image: url('../img/top-bar/mail.png'); /* Путь к изображению маркера */
+}
+ul#tw_fb li:first-child
+{
+  margin: 1;
+  margin-top: -2px;
+  list-style-image: url('../img/top-bar/tw.png'); /* Путь к изображению маркера */
+}
+ul#tw_fb li:last-child
+{
+  margin: 1;
+  margin-top: -1px;
+  list-style-image: url('../img/top-bar/fb.png'); /* Путь к изображению маркера */
+}
+
+
+/*==========================================================*/
+.link-group
+{
+  position: absolute;
+  vertical-align: middle;
+
+  float: left;
+  text-align: left;
+  margin: 10px 40px;
+  white-space: nowrap;
+}
+
+.link-group img
+{
+ float: left;
+ margin-right: 10px;
+}
+
+.link-group span
+{
+  vertical-align: middle;
+}
+
+.link-group a
+{
+  color: #fff;
+}
+
+.link-group a:hover
+{
+  color: #ea8e0b;
+}
+
+.group1
+{
+  left: 410px;
+}
+
+.group2
+{
+  left: 720px;
+}
+
+.group3
+{
+  left: 990px;
+}
+
+
+/*==========================================================*/
+
+#newsline
+{
+
+  height: 40px;
+  background-color: #000;
+  color: #fff
+}
+
+#news-btn
+{
+  height: 40px;
+  width: 100px;
+  background: linear-gradient(to top, #d4d4d4, #fff);
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #000;
+  text-align: center;
+  float:left;
+}
+
+
+/*==========================================================*/
+
+#modal_form
+{
+  width: 217px ;
+  /*height: 249px ;*/
+  min-height: 264px;
+  border-radius: 5px;
+  background-color: rgba(15,40,9,0.7);
+  position: fixed; /* чтобы окно было в видимой зоне в любом месте */
+  top: 10%; /* отступаем сверху 45%, остальные 5% подвинет скрипт */
+  left: 50%; /* половина экрана слева */
+  margin-top: -50px;
+  margin-left: -108px; /* тут вся магия центровки css, отступаем влево и вверх минус половину ширины и высоты соответственно =) */
+  display: none; /* в обычном состоянии окна не должно быть */
+  opacity: 0; /* полностью прозрачно для анимирования */
+  z-index: 5; /* окно должно быть наиболее большем слое */
+  padding: 20px 10px;
+  text-align: center;
+}
+
+#modal_form form input
+{
+  border-radius: 5px;
+  margin: 10px 0;
+  width: 172px;
+  height: 26px;
+  background-color:  #e9e9e9;
+  outline: none;
+  border: none;
+  vertical-align: middle;
+  padding-left: 10px;
+}
+
+
+#modal_form form textarea
+{
+  padding-left: 10px;
+  font-family: Arial;
+  border-radius: 5px;
+  margin: 10px 0;
+  width: 172px;
+  height: 88px;
+  background-color:  #e9e9e9;
+  outline: none;
+  border: none;
+  vertical-align: middle;
+}
+
+
+#modal_form #modal_close
+{
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: block;
+}
+
+#modal_form input[type="submit"]
+{
+  margin: 0 auto;
+  color: #fff;
+  font-size: 12px;
+  outline: none;
+  padding: 4px 13px 4px 13px;
+  display: block;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: rgb(234, 142, 11);
+  border: none;
+  border-bottom: 2px solid #844e00;
+}
+
+#modal_form input[type="submit"]:hover
+{
+  color: #fff;
+  background-color: rgb(255, 153, 0);
+}
+
+.wpcf7-validation-errors
+{
+  border-radius: 5px;
+  color: #fff;
+  border-color: #f00 !important;
+}
+
+.wpcf7-not-valid-tip
+{
+  font-size: 12px !important;
+}
+
+.wpcf7-mail-sent-ok
+{
+  border-radius: 5px;
+  color: #fff;
+  border-color: #ea8e0b !important;
+}
+
+
+#overlay
+{
+    z-index: 3; /* подложка должна быть выше слоев элементов сайта, но ниже слоя модального окна */
+    position: fixed; /* всегда перекрывает весь сайт */
+    background-color: #fff; /* черная */
+    opacity: 0.7; /* но немного прозрачна */
+    width: 100%;
+    height: 100%; /* размером во весь экран */
+    top: 0;
+    left: 0; /* сверху и слева 0, обязательные свойства! */
+    cursor: pointer;
+    display: none; /* в обычном состоянии её нет) */
+}
+
+
+/*==========================================================*/
+#head
+{
+  position: relative;
+  height: 386px;
+  background: url('../img/head/stadium.png') no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  z-index: 1;
+}
+
+#hero
+{
+  background-color: rgba(15,40,9,0.7);
+  width: 770px;
+  height: 270px;
+
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  margin: 0 0 0 -385px;
+  background-image: url('../img/head/main-logo.png');
+  background-repeat: no-repeat;
+  background-position: 30px 30px;
+}
+
+.title
+{
+  color: #fff;
+  border-left: 1px solid #fff;
+  width:355px;
+  height:185px;
+  text-transform: uppercase;
+  margin-left: 378px;
+  margin-top: 40px;
+  padding-left:25px;
+  line-height: 40px;
+}
+
+.title span
+{
+  font-size:45px;
+}
+
+
+
+/*==========================================================*/
+ul.nav-bar
+{
+  position: relative;
+  text-align: left;
+  height: 50px;
+  width: 995px;
+  margin: -63px auto 22px auto;
+  line-height: 50px;
+  border-radius: 40px;
+  background: url('../img/navbar/bg-nav.png') repeat-x;
+  box-shadow: 0 2px 2px #a6a6a6;
+  z-index: 2;
+}
+
+
+.nav-bar li
+{
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+}
+
+.nav-bar a
+{
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #000;
+  font-family: 'Microsoft YaHei';
+  text-shadow: 1px 1px 1px black;
+  padding: 12px 18px 12px 18px;
+}
+
+.nav-bar li:hover,.current-menu-item
+{
+  background: linear-gradient(to top, #eb900f, #ffb650);
+}
+
+.nav-bar li:hover a
+{
+  color: #fff;
+}
+
+li.current-menu-item a
+{
+  color: #fff;
+}
+
+
+
+/*==========================================================*/
+#content
+{
+  position: relative;
+  background: linear-gradient(to top, #f1f1f1, #f9f9f9);
+  width: 763px;
+  min-height: 400px;
+  float: left;
+  margin: 0 22px 22px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #f9f9f9;
+  box-shadow: 0 -2px 2px #a6a6a6;
+}
+
+.post_title
+{
+  text-align: left;
+}
+
+.post_title img
+{
+  float: left;
+  margin-right: 20px;
+}
+
+.post_title h1
+{
+  display: inline-block;
+  border-bottom: 2px solid #ea8e0b;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.post_content
+{
+  margin: 15px;
+  word-break: break-all;
+}
+
+
+
+/*==========================================================*/
+#side-bar
+{
+  border-radius: 5px;
+  padding: 8px;
+  border: 1px solid #f9f9f9;
+  width: 372px;
+  min-height: 300px;
+  float: left;
+  background: linear-gradient(to top, #f1f1f1, #f9f9f9);
+  box-shadow: 0 -2px 2px #a6a6a6;
+  word-break: break-all;
+  margin: 0 0 22px 0;
+}
+
+.side_title
+{
+  display: block;
+  width: 100%;
+  margin: 10px auto 0 auto;
+  text-align: center;
+}
+
+.align
+{
+  display: inline-block;
+}
+
+.side_title img
+{
+  float: left;
+  margin-right: 10px;
+}
+
+.side_title h2
+{
+  float: left;
+  border-bottom: 2px solid #ea8e0b;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.preview
+{
+  font-size: 12px;
+}
+
+.mute
+{
+  color: #d3d3d3;
+}
+
+.preview img
+{
+  float: left;
+  padding-right: 10px;
+}
+
+.vote
+{
+  margin-left: 50px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.vote input[type="button"]
+{
+  color: #fff;
+  font-size: 12px;
+  outline: none;
+  padding: 4px 13px 4px 13px;
+  display: inline-block;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: rgb(234, 142, 11);
+  border: none;
+  border-bottom: 2px solid #844e00;
+}
+
+
+/*======================================*/
+
+.vote input[type="button"]:hover
+{
+  color: #fff;
+  border-color: #f9f9f9;
+  background-color: rgb(255, 153, 0);
+}
+
+.wp-polls-ul li
+{
+  padding-bottom: 20px;
+}
+
+.vote a
+{
+  color: #000;
+  font-size: 12px;
+  outline: none;
+  padding: 4px 27px 4px 27px;
+  display: inline-block;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: #d3d3d3;
+  border: none;
+  border-bottom: 2px solid #844e00;
+}
+
+.vote a:hover
+{
+  color: #fff;
+  border-color: #f9f9f9;
+  background-color: rgb(255, 153, 0);
+}
+
+
+
+/*====================Пагинация==============================*/
+ul.page-numbers
+{
+  border:0; margin:0; padding:0;
+}
+
+.page-numbers li
+{
+  border:0; margin:0; padding:0;
+  font-size:14px;
+  list-style:none;
+}
+
+.page-numbers a
+{
+
+  border: solid 1px #dddddd;
+  border-radius: 5px;
+  margin-right: 2px;
+  background-color: #ea8e0b;
+}
+
+.page-numbers .next a,
+.page-numbers .previous a
+{
+  font-weight:bold;
+  border:solid 1px #FFFFFF;
+}
+.page-numbers .current{
+color: #ea8e0b;
+font-weight:bold;
+display:block;
+float:left;
+padding:4px 6px;
+}
+.page-numbers a:link,
+.page-numbers a:visited {
+color: #fff;
+display:block;
+float:left;
+padding:3px 6px;
+text-decoration:none;
+}
+.page-numbers a:hover{
+border:solid 1px #ea8e0b;
+}
+/*====================Пагинация==Конец============================*/
+
+/*========================Баннер==================================*/
+#banner
+{
+  color: #3c3c3c;
+  width: 629px;
+  height: 155px;
+  margin: 31px 0 0 23px;
+  padding: 57px 47px 61px 46px;
+  background: url('../img/content/bg-banner.png')no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#banner #bn_title
+{
+
+  white-space: pre;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+#banner #bn_text
+{
+  text-transform: uppercase;
+  float:left;
+  margin-right: 30px;
+}
+
+/*============Кнопки==============================================*/
+
+.btn
+{
+  color: #fff;
+  outline: none;
+  padding: 4px 13px 4px 13px;
+  display: inline-block;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: rgb(234, 142, 11);
+  border: none;
+  border-bottom: 2px solid #844e00;
+}
+
+.btn:hover
+{
+  color: #fff;
+  border: none;
+  background-color: rgb(255, 153, 0);
+}
+
+a.btn:hover
+{
+  color: #fff;
+}
+
+.btn-large
+{
+  padding: 7px 30px 7px 30px;
+}
+
+/*==========================================================*/
+#footer
+{
+
+  height: 193px;
+  background: url('../img/footer/bg.png')no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.layout-bot ul
+{
+  list-style-image: url('../img/footer/link_map.png'); /* Путь к изображению маркера */
+  float: left;
+  margin: 0 0 0 13px;
+  width: 15%;
+  height: 160px;
+  -webkit-backface-visibility: hidden
+}
+
+
+
+.layout-bot li
+{
+
+  padding: 3px 10px 20px 0;
+}
+
+.layout-bot li:hover
+{
+  list-style-image: url('../img/footer/link_hover.png'); /* Путь к изображению маркера */
+}
+
+.layout-bot li a
+{
+  color: #fff;
+  text-decoration: none;
+}
+
+.layout-bot li a:hover
+{
+  color: #ea8e0b;
+  text-decoration: underline;
+}
+
+#sheer
+{
+  position: absolute;
+  right: 0;
+  color: gray;
+  text-align: right;
+}
+
+
+/*=========================Helpers===========================*/
+.clear
+{
+  clear: left; /* Отмена обтекания */
+}
+
+.layout
+{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.layout-bot
+{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 22px 0 25px 0;
+  position: relative;
+}
+
+.layout-top
+{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 17px 0  30px 0;
+  position: relative;
+}
+
+.mask
+{
+  background-color: rgba(0,0,0,0.7);
+  width: 100%;
+  height:100%;
+}
+
+.helper {
+    display:inline-block;
+    vertical-align:middle;
+    height:100%;
+    width:0px;
+}
